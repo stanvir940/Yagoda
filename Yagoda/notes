@@ -1,0 +1,113 @@
+import SwiftUI
+import FirebaseAuth
+
+struct AuthenticationView: View {
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var isLoggedIn: Bool = false
+    @State private var toastMessage: String = ""
+    @State private var showToast: Bool = false
+    @State private var isError: Bool = false
+
+    var body: some View {
+        NavigationStack {
+            VStack {
+                
+            }
+            
+            .navigationDestination(isPresented: $isLoggedIn) {
+                HomePage()
+            }
+        }
+    }
+
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                showErrorToast(message: "Login failed: \(error.localizedDescription)")
+            } else {
+                showSuccessToast(message: "Login successful!")
+                isLoggedIn = true
+            }
+        }
+    }
+
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                showErrorToast(message: "Registration failed: \(error.localizedDescription)")
+            } else {
+                showSuccessToast(message: "Registration successful!")
+                isLoggedIn = true
+            }
+        }
+    }
+
+    func showErrorToast(message: String) {
+        toastMessage = message
+        isError = true
+        showToast = true
+        hideToastAfterDelay()
+    }
+
+    func showSuccessToast(message: String) {
+        toastMessage = message
+        isError = false
+        showToast = true
+        hideToastAfterDelay()
+    }
+
+    func hideToastAfterDelay() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            showToast = false
+        }
+    }
+}
+
+struct HomePage: View {
+    var body: some View {
+        NavigationStack {
+            VStack {
+                PropertyListView()
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Properties")
+                        .font(.title)
+                        .bold()
+                }
+            }
+        }
+    }
+}
+
+struct PropertyListView: View {
+    let properties = [
+        "Property 1",
+        "Property 2",
+        "Property 3"
+    ]
+
+    var body: some View {
+        List(properties, id: \.self) { property in
+            NavigationLink(property) {
+                PropertyDetailsView(propertyName: property)
+            }
+        }
+    }
+}
+
+struct PropertyDetailsView: View {
+    let propertyName: String
+
+    var body: some View {
+        VStack {
+            Text("Details for \(propertyName)")
+                .font(.title)
+            Spacer()
+        }
+        .padding()
+        .navigationTitle(propertyName)
+    }
+}
+

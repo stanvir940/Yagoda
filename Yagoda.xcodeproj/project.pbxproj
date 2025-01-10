@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B76B7DEC2D2F9426007BA910 /* AdminPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B7DEB2D2F9426007BA910 /* AdminPanelView.swift */; };
+		B76B7DEE2D2FAF2B007BA910 /* AdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B7DED2D2FAF2B007BA910 /* AdsView.swift */; };
+		B76B7DF02D2FAFC0007BA910 /* AdsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B7DEF2D2FAFC0007BA910 /* AdsDetailView.swift */; };
+		B7800BAF2D2846FA0009C7E8 /* YagodaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7800BAE2D2846FA0009C7E8 /* YagodaApp.swift */; };
+		B7800BB12D2846FA0009C7E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7800BB02D2846FA0009C7E8 /* ContentView.swift */; };
+		B7800BB32D2846FC0009C7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7800BB22D2846FC0009C7E8 /* Assets.xcassets */; };
+		B7800BB62D2846FC0009C7E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7800BB52D2846FC0009C7E8 /* Preview Assets.xcassets */; };
+		B7800BC02D284C0B0009C7E8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7800BBF2D284C0B0009C7E8 /* AuthenticationView.swift */; };
+		B7800BC32D284CAA0009C7E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B7800BC22D284CAA0009C7E8 /* FirebaseAuth */; };
+		B7800BC52D284CB20009C7E8 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B7800BC42D284CB20009C7E8 /* FirebaseCore */; };
+		B7800BC72D2851920009C7E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7800BC62D2851920009C7E8 /* GoogleService-Info.plist */; };
+		B7D2D0E22D296B6F000AC3FA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B7D2D0E12D296B6F000AC3FA /* FirebaseFirestore */; };
+		B7D2D0E42D296C4F000AC3FA /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E32D296C4F000AC3FA /* Property.swift */; };
+		B7D2D0E62D296D06000AC3FA /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E52D296D06000AC3FA /* PropertyListViewModel.swift */; };
+		B7D2D0E82D296D79000AC3FA /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E72D296D79000AC3FA /* PropertyListView.swift */; };
+		B7D2D0EA2D297368000AC3FA /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E92D297368000AC3FA /* PropertyDetailView.swift */; };
+		B7D2D0EC2D297581000AC3FA /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0EB2D297581000AC3FA /* HomePage.swift */; };
+		B7D2D0EE2D297C9B000AC3FA /* notes in Resources */ = {isa = PBXBuildFile; fileRef = B7D2D0ED2D297C9B000AC3FA /* notes */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B76B7DEB2D2F9426007BA910 /* AdminPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelView.swift; sourceTree = "<group>"; };
+		B76B7DED2D2FAF2B007BA910 /* AdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsView.swift; sourceTree = "<group>"; };
+		B76B7DEF2D2FAFC0007BA910 /* AdsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsDetailView.swift; sourceTree = "<group>"; };
+		B7800BAB2D2846FA0009C7E8 /* Yagoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yagoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7800BAE2D2846FA0009C7E8 /* YagodaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YagodaApp.swift; sourceTree = "<group>"; };
+		B7800BB02D2846FA0009C7E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7800BB22D2846FC0009C7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7800BB52D2846FC0009C7E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7800BBF2D284C0B0009C7E8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		B7800BC62D2851920009C7E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7D2D0E32D296C4F000AC3FA /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		B7D2D0E52D296D06000AC3FA /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
+		B7D2D0E72D296D79000AC3FA /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
+		B7D2D0E92D297368000AC3FA /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
+		B7D2D0EB2D297581000AC3FA /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		B7D2D0ED2D297C9B000AC3FA /* notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7800BA82D2846FA0009C7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7800BC52D284CB20009C7E8 /* FirebaseCore in Frameworks */,
+				B7800BC32D284CAA0009C7E8 /* FirebaseAuth in Frameworks */,
+				B7D2D0E22D296B6F000AC3FA /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7800BA22D2846FA0009C7E8 = {
+			isa = PBXGroup;
+			children = (
+				B7800BAD2D2846FA0009C7E8 /* Yagoda */,
+				B7800BAC2D2846FA0009C7E8 /* Products */,
+				B7800BC12D284CAA0009C7E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7800BAC2D2846FA0009C7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7800BAB2D2846FA0009C7E8 /* Yagoda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7800BAD2D2846FA0009C7E8 /* Yagoda */ = {
+			isa = PBXGroup;
+			children = (
+				B7800BAE2D2846FA0009C7E8 /* YagodaApp.swift */,
+				B7800BC62D2851920009C7E8 /* GoogleService-Info.plist */,
+				B7800BB02D2846FA0009C7E8 /* ContentView.swift */,
+				B7800BB22D2846FC0009C7E8 /* Assets.xcassets */,
+				B7800BB42D2846FC0009C7E8 /* Preview Content */,
+				B7800BBF2D284C0B0009C7E8 /* AuthenticationView.swift */,
+				B7D2D0E32D296C4F000AC3FA /* Property.swift */,
+				B7D2D0E52D296D06000AC3FA /* PropertyListViewModel.swift */,
+				B7D2D0E72D296D79000AC3FA /* PropertyListView.swift */,
+				B7D2D0E92D297368000AC3FA /* PropertyDetailView.swift */,
+				B7D2D0EB2D297581000AC3FA /* HomePage.swift */,
+				B7D2D0ED2D297C9B000AC3FA /* notes */,
+				B76B7DEB2D2F9426007BA910 /* AdminPanelView.swift */,
+				B76B7DED2D2FAF2B007BA910 /* AdsView.swift */,
+				B76B7DEF2D2FAFC0007BA910 /* AdsDetailView.swift */,
+			);
+			path = Yagoda;
+			sourceTree = "<group>";
+		};
+		B7800BB42D2846FC0009C7E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B7800BB52D2846FC0009C7E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7800BC12D284CAA0009C7E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7800BAA2D2846FA0009C7E8 /* Yagoda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7800BB92D2846FC0009C7E8 /* Build configuration list for PBXNativeTarget "Yagoda" */;
+			buildPhases = (
+				B7800BA72D2846FA0009C7E8 /* Sources */,
+				B7800BA82D2846FA0009C7E8 /* Frameworks */,
+				B7800BA92D2846FA0009C7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yagoda;
+			packageProductDependencies = (
+				B7800BC22D284CAA0009C7E8 /* FirebaseAuth */,
+				B7800BC42D284CB20009C7E8 /* FirebaseCore */,
+				B7D2D0E12D296B6F000AC3FA /* FirebaseFirestore */,
+			);
+			productName = Yagoda;
+			productReference = B7800BAB2D2846FA0009C7E8 /* Yagoda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7800BA32D2846FA0009C7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B7800BAA2D2846FA0009C7E8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B7800BA62D2846FA0009C7E8 /* Build configuration list for PBXProject "Yagoda" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7800BA22D2846FA0009C7E8;
+			packageReferences = (
+				B7800BBE2D2848C80009C7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = B7800BAC2D2846FA0009C7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7800BAA2D2846FA0009C7E8 /* Yagoda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7800BA92D2846FA0009C7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7800BB62D2846FC0009C7E8 /* Preview Assets.xcassets in Resources */,
+				B7800BB32D2846FC0009C7E8 /* Assets.xcassets in Resources */,
+				B7D2D0EE2D297C9B000AC3FA /* notes in Resources */,
+				B7800BC72D2851920009C7E8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7800BA72D2846FA0009C7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D2D0E62D296D06000AC3FA /* PropertyListViewModel.swift in Sources */,
+				B76B7DF02D2FAFC0007BA910 /* AdsDetailView.swift in Sources */,
+				B7D2D0E82D296D79000AC3FA /* PropertyListView.swift in Sources */,
+				B76B7DEC2D2F9426007BA910 /* AdminPanelView.swift in Sources */,
+				B76B7DEE2D2FAF2B007BA910 /* AdsView.swift in Sources */,
+				B7800BB12D2846FA0009C7E8 /* ContentView.swift in Sources */,
+				B7800BAF2D2846FA0009C7E8 /* YagodaApp.swift in Sources */,
+				B7D2D0E42D296C4F000AC3FA /* Property.swift in Sources */,
+				B7D2D0EA2D297368000AC3FA /* PropertyDetailView.swift in Sources */,
+				B7800BC02D284C0B0009C7E8 /* AuthenticationView.swift in Sources */,
+				B7D2D0EC2D297581000AC3FA /* HomePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7800BB72D2846FC0009C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7800BB82D2846FC0009C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7800BBA2D2846FC0009C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yagoda/Preview Content\"";
+				DEVELOPMENT_TEAM = A26UTYMHPT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.Yagoda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7800BBB2D2846FC0009C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yagoda/Preview Content\"";
+				DEVELOPMENT_TEAM = A26UTYMHPT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.Yagoda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7800BA62D2846FA0009C7E8 /* Build configuration list for PBXProject "Yagoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7800BB72D2846FC0009C7E8 /* Debug */,
+				B7800BB82D2846FC0009C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7800BB92D2846FC0009C7E8 /* Build configuration list for PBXNativeTarget "Yagoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7800BBA2D2846FC0009C7E8 /* Debug */,
+				B7800BBB2D2846FC0009C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7800BBE2D2848C80009C7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7800BC22D284CAA0009C7E8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7800BBE2D2848C80009C7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B7800BC42D284CB20009C7E8 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7800BBE2D2848C80009C7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		B7D2D0E12D296B6F000AC3FA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7800BBE2D2848C80009C7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B7800BA32D2846FA0009C7E8 /* Project object */;
+}
