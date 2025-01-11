@@ -16,7 +16,7 @@ struct AdsDetailView: View { //PropertyDetailView
             VStack(alignment: .leading) {
                 AsyncImage(url: URL(string: property.imageUrl)) { image in
                     image.resizable()
-                         .scaledToFill()
+                         .aspectRatio(contentMode: .fill)
                 } placeholder: {
                     ProgressView()
                 }

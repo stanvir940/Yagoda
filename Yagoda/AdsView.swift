@@ -23,7 +23,7 @@ struct AdsView: View {
             } else {
                 List(properties) { property in
                     NavigationLink(destination: PropertyDetailView(property: property)) {
-                        HStack {
+                        VStack {
                             AsyncImage(url: URL(string: property.imageUrl)) { image in
                                 image.resizable()
                                      .aspectRatio(contentMode: .fill)
