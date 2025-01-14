@@ -15,6 +15,9 @@ struct HomePage: View {
     @State private var isLoading = true
     @State private var showingSortOptions = false
     @State private var selectedSortOption: SortOption = .default
+    @State private var navigateToNewView = false // State for navigation
+    @State private var navigationPath: [String] = []
+    
     
     enum SortOption: String, CaseIterable {
         case `default` = "Default"
@@ -72,6 +75,20 @@ struct HomePage: View {
                                 .background(Color(.systemGray6))
                                 .cornerRadius(10)
                         }
+                        Button(action: {
+                            navigateToNewView = true;
+                            navigationPath.append("newView");
+//                            printf($navigationToNewView)
+                        }) {
+                            Text("Bookings")
+                                .font(.headline)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .padding(.horizontal)
+                        }
                     }
                     .padding(.horizontal)
                     
@@ -90,8 +107,17 @@ struct HomePage: View {
                                 Image(systemName: "xmark.circle.fill")
                                     .foregroundColor(.gray)
                             }
+                            
                         }
                         .padding(.horizontal)
+                        
+                        // start here
+                        // Navigation Button
+//                                            NavigationLink(destination: UserBookingsView(), isActive: $navigateToNewView) {
+//                                                EmptyView()
+//                                            }.hidden()
+                                            
+                                            
                     }
                     
                     if isLoading {
@@ -141,6 +167,9 @@ struct HomePage: View {
                         }
                     } + [.cancel()]
                 )
+            }
+            .navigationDestination(isPresented: $navigateToNewView) {
+                UserBookingsView()
             }
         }
     }
@@ -286,4 +315,4 @@ struct PropertyListItem: View {
         .cornerRadius(15)
         .shadow(radius: 3)
     }
-}
+} 

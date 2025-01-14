@@ -18,6 +18,8 @@
 		B7800BC32D284CAA0009C7E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B7800BC22D284CAA0009C7E8 /* FirebaseAuth */; };
 		B7800BC52D284CB20009C7E8 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B7800BC42D284CB20009C7E8 /* FirebaseCore */; };
 		B7800BC72D2851920009C7E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7800BC62D2851920009C7E8 /* GoogleService-Info.plist */; };
+		B7B5DDCB2D36DC100020BB45 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5DDCA2D36DC100020BB45 /* Booking.swift */; };
+		B7B5DDCD2D36DC870020BB45 /* AdminBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5DDCC2D36DC870020BB45 /* AdminBookingsView.swift */; };
 		B7D2D0E22D296B6F000AC3FA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B7D2D0E12D296B6F000AC3FA /* FirebaseFirestore */; };
 		B7D2D0E42D296C4F000AC3FA /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E32D296C4F000AC3FA /* Property.swift */; };
 		B7D2D0E62D296D06000AC3FA /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E52D296D06000AC3FA /* PropertyListViewModel.swift */; };
@@ -25,6 +27,7 @@
 		B7D2D0EA2D297368000AC3FA /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0E92D297368000AC3FA /* PropertyDetailView.swift */; };
 		B7D2D0EC2D297581000AC3FA /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D0EB2D297581000AC3FA /* HomePage.swift */; };
 		B7D2D0EE2D297C9B000AC3FA /* notes in Resources */ = {isa = PBXBuildFile; fileRef = B7D2D0ED2D297C9B000AC3FA /* notes */; };
+		B7D697EA2D365AF400D14F47 /* UserBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D697E92D365AF300D14F47 /* UserBookingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +41,15 @@
 		B7800BB52D2846FC0009C7E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7800BBF2D284C0B0009C7E8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		B7800BC62D2851920009C7E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7B5DDCA2D36DC100020BB45 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		B7B5DDCC2D36DC870020BB45 /* AdminBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBookingsView.swift; sourceTree = "<group>"; };
 		B7D2D0E32D296C4F000AC3FA /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B7D2D0E52D296D06000AC3FA /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
 		B7D2D0E72D296D79000AC3FA /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
 		B7D2D0E92D297368000AC3FA /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
 		B7D2D0EB2D297581000AC3FA /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B7D2D0ED2D297C9B000AC3FA /* notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
+		B7D697E92D365AF300D14F47 /* UserBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 				B76B7DEB2D2F9426007BA910 /* AdminPanelView.swift */,
 				B76B7DED2D2FAF2B007BA910 /* AdsView.swift */,
 				B76B7DEF2D2FAFC0007BA910 /* AdsDetailView.swift */,
+				B7D697E92D365AF300D14F47 /* UserBookingsView.swift */,
+				B7B5DDCA2D36DC100020BB45 /* Booking.swift */,
+				B7B5DDCC2D36DC870020BB45 /* AdminBookingsView.swift */,
 			);
 			path = Yagoda;
 			sourceTree = "<group>";
@@ -197,7 +206,10 @@
 				B7D2D0E62D296D06000AC3FA /* PropertyListViewModel.swift in Sources */,
 				B76B7DF02D2FAFC0007BA910 /* AdsDetailView.swift in Sources */,
 				B7D2D0E82D296D79000AC3FA /* PropertyListView.swift in Sources */,
+				B7D697EA2D365AF400D14F47 /* UserBookingsView.swift in Sources */,
 				B76B7DEC2D2F9426007BA910 /* AdminPanelView.swift in Sources */,
+				B7B5DDCB2D36DC100020BB45 /* Booking.swift in Sources */,
+				B7B5DDCD2D36DC870020BB45 /* AdminBookingsView.swift in Sources */,
 				B76B7DEE2D2FAF2B007BA910 /* AdsView.swift in Sources */,
 				B7800BB12D2846FA0009C7E8 /* ContentView.swift in Sources */,
 				B7800BAF2D2846FA0009C7E8 /* YagodaApp.swift in Sources */,
@@ -335,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yagoda/Preview Content\"";
@@ -353,6 +366,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.Yagoda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yagoda/Preview Content\"";
@@ -382,6 +397,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.Yagoda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
